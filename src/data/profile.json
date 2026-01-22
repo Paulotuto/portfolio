@@ -1,0 +1,83 @@
+{
+    "name": "Paul Tallon",
+    "title": "Développeur Symfony Freelance | Spécialisé E-commerce",
+    "bio": "Je m'appelle Paul Tallon, j'ai 23 ans et je suis développeur web freelance spécialisé en Symfony et projets e-commerce. Après des études en informatique à La Rochelle Université, j'ai acquis une solide expérience dans le développement de sites vitrines et plateformes sur mesure. Je travaille avec des PME et commerçants pour créer des sites rapides, fiables et optimisés pour la conversion, tout en assurant maintenance et évolutions. Passionné par les technologies modernes et l'optimisation des performances, je mets également l'intelligence artificielle au service de ma productivité pour me concentrer sur les aspects stratégiques des projets.",
+    "skills": [
+        {
+            "name": "Frontend",
+            "items": [
+                "HTML5 & CSS3",
+                "JavaScript",
+                "Vue.js",
+                "React.js",
+                "TailwindCSS",
+                "Responsive Design",
+                "UI/UX"
+            ]
+        },
+        {
+            "name": "Backend",
+            "items": [
+                "Symfony",
+                "PHP 8",
+                "WordPress (développement & intégration)",
+                "API REST",
+                "Bases de données SQL (MySQL, PostgreSQL)",
+                "Développement de fonctionnalités sur mesure",
+                "Gestion d’authentification"
+            ]
+        },
+        {
+            "name": "DevOps & Workflow",
+            "items": [
+                "Docker",
+                "Git & GitHub/GitLab",
+                "CI/CD",
+                "Tests unitaires",
+                "Optimisation des performances",
+                "Déploiement web"
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "role": "Développeur web freelance",
+            "company": "Situto",
+            "duration": "sept. 2025 - aujourd’hui",
+            "location": "Louplande, Pays de la Loire, France",
+            "description": "Missions freelance auprès de PME et sous-traitance : développement Symfony, sites vitrines et e-commerce, maintenance et évolutions."
+        },
+        {
+            "role": "Développeur web",
+            "company": "Tonton Outdoor",
+            "duration": "sept. 2024 - sept. 2025",
+            "location": "Vannes, Bretagne, France",
+            "description": "Développement web en CDD, création de sites et intégration frontend/backend."
+        },
+        {
+            "role": "Stagiaire développeur web",
+            "company": "Tonton Outdoor",
+            "duration": "avr. 2024 - sept. 2024",
+            "location": "Hybride",
+            "description": "Stage en développement web, participation à des projets Symfony et frontend."
+        }
+    ],
+    "education": [
+        {
+            "degree": "Licence professionnelle, Développement web",
+            "institution": "La Rochelle Université",
+            "duration": "sept. 2023 - sept. 2024"
+        },
+        {
+            "degree": "Licence 2, Informatique",
+            "institution": "La Rochelle Université",
+            "duration": "sept. 2021 - juin 2023"
+        }
+    ],
+    "contact": {
+        "email": "paul.tallon@dev.io",
+        "github": "github.com/paultallon",
+        "linkedin": "linkedin.com/in/paul-tallon-b13147236",
+        "twitter": "@paultallon"
+    }
+}

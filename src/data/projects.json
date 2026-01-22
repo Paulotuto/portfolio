@@ -1,0 +1,37 @@
+[
+    {
+        "id": "tontonoutdoor",
+        "title": "Tonton Outdoor",
+        "description": "Développement FullStack Symfony au sein d’une équipe de trois développeurs. Participation à l’évolution d’une plateforme e-commerce basée sur Sylius avec un focus sur la performance, l’intégration UI et la maintenabilité.",
+        "category": "Expérience professionnelle",
+        "featured": true,
+        "stack": [
+            "Symfony",
+            "Sylius",
+            "TailwindCSS"
+        ],
+        "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
+        "github": null,
+        "demo": "https://tonton-outdoor.com",
+        "case_study": null,
+        "problems_solved": "Travail sur un projet e-commerce complexe, amélioration de l’interface utilisateur, montée en compétence sur Sylius et bonnes pratiques Symfony en environnement professionnel."
+    },
+    {
+        "id": "restaurant-des-plantes",
+        "title": "Restaurant des Plantes",
+        "description": "Création en freelance du site vitrine d’un restaurant avec un back-office administrable. Le client a souligné la modernisation du design et la simplicité d’utilisation.",
+        "category": "Projet client",
+        "featured": true,
+        "stack": [
+            "Symfony",
+            "EasyAdmin",
+            "TailwindCSS",
+            "Intégration web"
+        ],
+        "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80",
+        "github": "https://github.com/Paulotuto/restaurantdesplantes",
+        "demo": "https://restaurant-des-plantes.com",
+        "case_study": null,
+        "problems_solved": "Création d’un back-office simple pour un client non technique, amélioration de l’image de marque du restaurant, livraison d’un site moderne et autonome."
+    }
+]
