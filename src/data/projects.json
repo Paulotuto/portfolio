@@ -50,5 +50,24 @@
         "demo": "https://paul-tallon.situto.net",
         "case_study": null,
         "problems_solved": "Création d'une interface immersive sans dépendance lourde, gestion de l'historique des commandes et rendu dynamique des sorties."
+    },
+    {
+        "id": "covoit-entreprise",
+        "title": "Covoit'Entreprise",
+        "description": "Plateforme intelligente de covoiturage corporate conçue pour optimiser les déplacements professionnels. Permet d'organiser et de partager les trajets vers des événements d'entreprise.",
+        "category": "Projet personnel",
+        "featured": true,
+        "stack": [
+            "Vue 3",
+            "Vite 7",
+            "Tailwind CSS 4",
+            "Supabase",
+            "Vue Router 4"
+        ],
+        "image": "/projects/covoit-entreprise.png",
+        "github": "https://github.com/Paulotuto/covoitentreprise",
+        "demo": "https://covoitentreprise.situto.net/",
+        "case_study": null,
+        "problems_solved": "Optimisation des déplacements corporate, gestion multi-tenant sécurisée, et communication en temps réel entre collaborateurs."
     }
 ]
