@@ -1,6 +1,5 @@
 <script setup>
 import { onMounted, onUnmounted } from 'vue'
-import TerminalView from './views/TerminalView.vue'
 
 let originalTitle = document.title
 
@@ -23,8 +22,12 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="h-screen w-screen overflow-hidden bg-dark text-white select-none">
-    <TerminalView key="terminal" />
+  <div class="h-screen w-screen overflow-hidden bg-black text-white">
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" :key="$route.path" />
+      </transition>
+    </router-view>
   </div>
 </template>
 
@@ -32,7 +35,19 @@ onUnmounted(() => {
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 /* Main layout styles */
-.bg-dark {
+body {
+  margin: 0;
   background-color: #000000;
+}
+
+/* Transitions */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

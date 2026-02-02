@@ -144,25 +144,31 @@ onMounted(() => {
 </script>
 
 <template>
-  <div 
-    class="h-full w-full bg-[#0d0d0d] p-6 font-mono text-green-500 overflow-hidden flex flex-col"
-    @mouseup="handleGlobalClick"
-  >
-    <div ref="terminalContainer" class="flex-grow overflow-y-auto scroll-smooth custom-scrollbar">
-      <div v-for="(entry, index) in history" :key="index" class="mb-2">
-        <div v-if="entry.type === 'input'" class="flex">
-          <span class="mr-2 text-blue-400">➜</span>
-          <span class="text-white">{{ entry.content }}</span>
+  <div class="relative h-full w-full overflow-hidden">
+    <div 
+      class="h-full w-full bg-[#0d0d0d] p-6 font-mono text-green-500 overflow-hidden flex flex-col"
+      @mouseup="handleGlobalClick"
+    >
+      <div ref="terminalContainer" class="flex-grow overflow-y-auto scroll-smooth custom-scrollbar">
+        <div v-for="(entry, index) in history" :key="index" class="mb-2">
+          <div v-if="entry.type === 'input'" class="flex">
+            <span class="mr-2 text-blue-400">➜</span>
+            <span class="text-white">{{ entry.content }}</span>
+          </div>
+          <div v-else class="whitespace-pre-wrap leading-relaxed opacity-90">
+            <TerminalOutput 
+              :text="entry.content" 
+              @command-click="fillPrompt" 
+              @finished="isTyping = false"
+            />
+          </div>
         </div>
-        <div v-else class="whitespace-pre-wrap leading-relaxed opacity-90">
-          <TerminalOutput 
-            :text="entry.content" 
-            @command-click="fillPrompt" 
-            @finished="isTyping = false"
-          />
-        </div>
+        <TerminalPrompt v-if="!isTyping" ref="promptRef" @submit="handleCommand" />
       </div>
-      <TerminalPrompt v-if="!isTyping" ref="promptRef" @submit="handleCommand" />
+    </div>
+    
+    <div class="absolute top-0 right-0 bg-white/10 hover:bg-white/20 transition-colors p-2 text-white/50 hover:text-white rounded-lg m-2 backdrop-blur-sm text-sm border border-white/10">
+      <router-link to="/classic">Voir le site en version classique</router-link>
     </div>
   </div>
 </template>
