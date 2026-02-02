@@ -22,7 +22,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="h-screen w-screen overflow-hidden bg-black text-white">
+  <div class="h-screen w-screen overflow-y-auto bg-black text-white custom-scrollbar">
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component :is="Component" :key="$route.path" />
@@ -49,5 +49,20 @@ body {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+/* Custom Scrollbar Global */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #444;
 }
 </style>

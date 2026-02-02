@@ -166,10 +166,11 @@ onMounted(() => {
         <TerminalPrompt v-if="!isTyping" ref="promptRef" @submit="handleCommand" />
       </div>
     </div>
-    
-    <div class="absolute top-0 right-0 bg-white/10 hover:bg-white/20 transition-colors p-2 text-white/50 hover:text-white rounded-lg m-2 backdrop-blur-sm text-sm border border-white/10">
-      <router-link to="/classic">Voir le site en version classique</router-link>
+    <router-link to="/classic">
+    <div class="absolute top-0 right-0 bg-white/10 hover:bg-white/20 transition-colors p-2 text-white/70 hover:text-white rounded-lg m-2 backdrop-blur-sm text-sm border border-white/10">
+      Voir le site en version classique
     </div>
+    </router-link>
   </div>
 </template>
 
